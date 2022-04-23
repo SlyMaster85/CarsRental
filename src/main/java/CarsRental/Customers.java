@@ -1,8 +1,9 @@
 package CarsRental;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Scanner;
+
+import static CarsRental.InterfaceCar.entityManager;
 
 @Entity
 @Table(name="CUSTOMERS")
@@ -19,9 +20,7 @@ public class Customers {
     @Column(name="Last_Name")
     private String lastName;
 
-
-
-    public Customers() {
+    public Customers(){
 
     }
 
@@ -37,16 +36,19 @@ public class Customers {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    public String setFirstName(String firstName) {
         this.firstName = firstName;
+        return firstName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public String setLastName(String lastName) {
         this.lastName = lastName;
+        return lastName;
     }
+
 
 }

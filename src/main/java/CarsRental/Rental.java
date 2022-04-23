@@ -41,6 +41,7 @@ public class Rental {
 
     public void setCustomers(Customers customers) {
         this.customers = customers;
+
     }
 
     public Rental() {
@@ -71,8 +72,23 @@ public class Rental {
         this.returnCarDate = returnCarDate;
     }
 
-    public void setCars_id() {
+    public void getCars_id() {
+    }
+    public void getCustomers_id(){
+        
     }
 
 
+    public void setCars_id(int nextInt) {
+    }
+
+    public void setCustomers_id(int nextInt) {
+    }
+
+    public void getCars_id(int nextInt) {
+
+    }
+
+    public void getCustomers_id(int nextInt) {
+    }
 }
